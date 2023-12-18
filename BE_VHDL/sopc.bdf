@@ -1,0 +1,201 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 24 224 328 240)
+	(text "INPUT" (rect 261 0 289 10)(font "Arial" (font_size 6)))
+	(text "boutons_external_connection_export[1..0]" (rect 5 0 210 12)(font "Arial" ))
+	(pt 304 8)
+	(drawing
+		(line (pt 220 12)(pt 245 12))
+		(line (pt 220 4)(pt 245 4))
+		(line (pt 249 8)(pt 304 8))
+		(line (pt 220 12)(pt 220 4))
+		(line (pt 245 4)(pt 249 8))
+		(line (pt 245 12)(pt 249 8))
+	)
+	(text "VCC" (rect 264 7 284 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -32 240 24 280))
+)
+(pin
+	(input)
+	(rect 152 264 320 280)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "clk" (rect 5 0 19 17)(font "Intel Clear" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect 96 280 152 304))
+)
+(pin
+	(input)
+	(rect -72 144 256 160)
+	(text "INPUT" (rect 285 0 313 10)(font "Arial" (font_size 6)))
+	(text "av_compas_0_conduit_end_beginbursttransfer" (rect 5 0 235 12)(font "Arial" ))
+	(pt 328 8)
+	(drawing
+		(line (pt 244 12)(pt 269 12))
+		(line (pt 244 4)(pt 269 4))
+		(line (pt 273 8)(pt 328 8))
+		(line (pt 244 12)(pt 244 4))
+		(line (pt 269 4)(pt 273 8))
+		(line (pt 269 12)(pt 273 8))
+	)
+	(text "VCC" (rect 288 7 308 17)(font "Arial" (font_size 6)))
+	(annotation_block (location)(rect -128 96 -64 120))
+)
+(pin
+	(output)
+	(rect -24 184 320 200)
+	(text "OUTPUT" (rect 303 6 341 16)(font "Arial" (font_size 6)))
+	(text "avalon_pwm_0_conduit_end_writeresponsevalid_n" (rect 6 4 252 16)(font "Arial" ))
+	(pt 344 8)
+	(drawing
+		(line (pt 342 8)(pt 290 8))
+		(line (pt 290 12)(pt 264 12))
+		(line (pt 290 4)(pt 264 4))
+		(line (pt 290 4)(pt 290 12))
+		(line (pt 264 12)(pt 260 8))
+		(line (pt 260 8)(pt 264 4))
+		(line (pt 264 4)(pt 260 8))
+	)
+	(rotate180)
+	(annotation_block (location)(rect -120 200 -64 224))
+)
+(pin
+	(output)
+	(rect 0 304 280 320)
+	(text "OUTPUT" (rect 237 6 275 16)(font "Arial" (font_size 6)))
+	(text "leds_external_connection_export[7..0]" (rect 6 -1 186 16)(font "Intel Clear" ))
+	(pt 280 8)
+	(drawing
+		(line (pt 276 8)(pt 224 8))
+		(line (pt 224 12)(pt 198 12))
+		(line (pt 224 4)(pt 198 4))
+		(line (pt 224 4)(pt 224 12))
+		(line (pt 198 12)(pt 194 8))
+		(line (pt 194 8)(pt 198 4))
+		(line (pt 198 4)(pt 194 8))
+	)
+	(rotate180)
+	(annotation_block (location)(rect -48 328 8 480))
+)
+(symbol
+	(rect 344 80 1000 344)
+	(text "sopc_compteur" (rect 283 -1 388 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 248 25 260)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "av_compas_0_conduit_end_beginbursttransfer" (rect 0 0 270 14)(font "Arial" (font_size 8)))
+		(text "av_compas_0_conduit_end_beginbursttransfer" (rect 4 61 274 75)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 272 72))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "boutons_external_connection_export[1..0]" (rect 0 0 240 14)(font "Arial" (font_size 8)))
+		(text "boutons_external_connection_export[1..0]" (rect 4 141 244 155)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 272 152)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "clk_clk" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 181 41 195)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 272 192))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "avalon_pwm_0_conduit_end_writeresponsevalid_n" (rect 0 0 295 14)(font "Arial" (font_size 8)))
+		(text "avalon_pwm_0_conduit_end_writeresponsevalid_n" (rect 4 101 299 115)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 272 112))
+	)
+	(port
+		(pt 0 232)
+		(output)
+		(text "leds_external_connection_export[7..0]" (rect 0 0 218 14)(font "Arial" (font_size 8)))
+		(text "leds_external_connection_export[7..0]" (rect 4 221 222 235)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 272 232)(line_width 3))
+	)
+	(drawing
+		(text "av_compas_0_conduit_end" (rect 114 43 294 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "beginbursttransfer" (rect 277 67 366 79)(font "Arial" (color 0 0 0)))
+		(text "avalon_pwm_0_conduit_end" (rect 107 83 294 98)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "writeresponsevalid_n" (rect 277 107 379 119)(font "Arial" (color 0 0 0)))
+		(text "boutons_external_connection" (rect 104 123 295 138)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 277 147 307 159)(font "Arial" (color 0 0 0)))
+		(text "clk" (rect 257 163 274 178)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 277 187 291 199)(font "Arial" (color 0 0 0)))
+		(text "leds_external_connection" (rect 126 203 292 218)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 277 227 307 239)(font "Arial" (color 0 0 0)))
+		(text " sopc_compteur " (rect 587 248 669 260)(font "Arial" ))
+		(line (pt 272 32)(pt 384 32))
+		(line (pt 384 32)(pt 384 248))
+		(line (pt 272 248)(pt 384 248))
+		(line (pt 272 32)(pt 272 248))
+		(line (pt 273 52)(pt 273 76))
+		(line (pt 274 52)(pt 274 76))
+		(line (pt 273 92)(pt 273 116))
+		(line (pt 274 92)(pt 274 116))
+		(line (pt 273 132)(pt 273 156))
+		(line (pt 274 132)(pt 274 156))
+		(line (pt 273 172)(pt 273 196))
+		(line (pt 274 172)(pt 274 196))
+		(line (pt 273 212)(pt 273 236))
+		(line (pt 274 212)(pt 274 236))
+		(line (pt 0 0)(pt 656 0))
+		(line (pt 656 0)(pt 656 264))
+		(line (pt 0 264)(pt 656 264))
+		(line (pt 0 0)(pt 0 264))
+	)
+)
+(connector
+	(pt 256 152)
+	(pt 344 152)
+)
+(connector
+	(pt 328 232)
+	(pt 344 232)
+	(bus)
+)
+(connector
+	(pt 320 272)
+	(pt 344 272)
+)
+(connector
+	(pt 344 192)
+	(pt 320 192)
+)
+(connector
+	(pt 280 312)
+	(pt 344 312)
+	(bus)
+)
